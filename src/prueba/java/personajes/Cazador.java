@@ -73,10 +73,8 @@ public class Cazador extends Personaje {
 			accionRealizar = Integer.parseInt(br.readLine());
 		}
 		
-		String direccionNueva = null;
-		
 		if (accionRealizar == 1 || accionRealizar == 2 || accionRealizar == 3) {
-			direccionNueva = direccionActual;
+			String direccionNueva = direccionActual;
 			
 			if (accionRealizar == 2) {
 				direccionNueva = definirNuevaDirecccion(direccionActual, accionRealizar);
